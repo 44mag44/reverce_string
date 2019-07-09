@@ -12,6 +12,7 @@ int str_len(char *str)
 int main()
 {
 	char str[] = ")veseG rteP(gnirts esrever - margorp";
+	printf("old: %s\n", arr);
 	int len;
 	len = str_len(str);
 	int i, j;
@@ -23,8 +24,7 @@ int main()
 		str[i] = str[j];
 		str[j] = tmp;
 	}
-	printf("%s \n", str);
-	
+	printf("new: %s\n", arr);
 	return 0;	
 }
 
